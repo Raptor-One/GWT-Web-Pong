@@ -23,17 +23,22 @@ body, td, a, div, .p {
 
 /*/////////////////*/
 button {
-    font-size: 14pt;
+    font-size: 17pt;
     height: 40px;
-    width: 150px;
-    background-color: white;
-    color: black;
+    width: calc(100% - 80px);
+    background-color: black;
+    color: white;
+    margin: 40px;
+    padding: 20px;
     border: none;
+    border-top: white solid 1px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .custom-control-container {
     text-align: center;
+    padding: 10%;
 }
 
 .custom-control-box {

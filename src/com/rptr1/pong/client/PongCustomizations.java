@@ -3,7 +3,6 @@ package com.rptr1.pong.client;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.FlowPanel;
 import com.google.gwt.user.client.ui.RootPanel;
-import com.rptr1.pong.client.game.PongGame;
 import com.rptr1.pong.client.ui.CustomPropertyController;
 import com.rptr1.pong.client.ui.NumberSliderPropertyController;
 
@@ -17,6 +16,7 @@ public class PongCustomizations
     public static void show(Runnable startGame)
     {
         FlowPanel container = new FlowPanel(  );
+        container.setStyleName( "custom-control-container" );
         List<CustomPropertyController> properties= new ArrayList<>(  );
         properties.add( new NumberSliderPropertyController( TARGET_FPS, "Target FPS", 10, 500, 0));
         properties.add( new NumberSliderPropertyController( BALL_START_SPEED, "Ball Start Speed", 5, 100, 0));
