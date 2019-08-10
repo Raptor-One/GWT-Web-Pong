@@ -42,7 +42,7 @@ public class PongGame
     public void reset()
     {
         ball.setPosition( WIDTH / 2f, HEIGHT / 2f );
-        ball.setSpeed( 40 );
+        ball.setSpeed( getProperty( BALL_START_SPEED ) );
         ball.setDirection( (float) Math.PI * 1 / 4 );
         paddle1.setPosition( PADDLE_OFFSET, HEIGHT / 2f );
         paddle2.setPosition( WIDTH - PADDLE_OFFSET, HEIGHT / 2f );

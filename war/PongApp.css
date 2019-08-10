@@ -23,6 +23,9 @@ body, td, a, div, .p {
 
 /*/////////////////*/
 button {
+    font-size: 14pt;
+    height: 40px;
+    width: 150px;
     background-color: white;
     color: black;
     border: none;
